@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verification Test Pages</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+      h1 {
+        color: #0066cc;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 12px 0;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .desc {
+        color: #555;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Verification Test Pages</h1>
+    <p>Pages for manual testing of <code>verification-service</code>.</p>
+
+    <ul>
+      <li><a href="./happy.html">happy.html</a> – ✅ all scripts present and correct</li>
+      <li><a href="./missing.html">missing.html</a> – ❌ missing inline script</li>
+      <li><a href="./order.html">order.html</a> – 🔄 scripts in wrong order</li>
+      <li><a href="./duplicate.html">duplicate.html</a> – 🔁 duplicate remote script</li>
+      <li><a href="./inline_variants.html">inline_variants.html</a> – 🧩 inline scripts with formatting variations</li>
+      <li><a href="./remote_mismatch.html">remote_mismatch.html</a> – 🌐 wrong remote script version</li>
+      <li><a href="./notfound.html">notfound.html</a> – 🕳️ unreachable domain test</li>
+    </ul>
+  </body>
+</html>
